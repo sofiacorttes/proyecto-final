@@ -50,13 +50,9 @@ color: black;
     color: rgb(6, 120, 50);
 }
 
-.nombre, .apellido .usuario .email .direccion .pago .credito .titular .numero .vencimiento{
-    color: white;
-}
 
 .nav{
 float: inline-start;
-
 }
 
 .nav ul li {
@@ -113,97 +109,37 @@ float: inline-start;
       opacity: 1;
     }
   }
-  
-  .conteiner__cover {
-    width: 100%;
-    height: 800px;
-    background-position: right;
-    background-repeat: no-repeat;
-    padding: 40px;
-}
 
-.cover{
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+  @media (max-width:600px){
 
-.conteiner__cover .text{
-    max-width: 400px;
-}
-
-.conteiner__cover .text h1{
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.conteiner__cover .text p{
-    font-size: 18px;
-    margin-top: 40px;
-}
-
-
-
-  @media screen and (max-width: 1700px){
-    .conteiner__cover{
-        background-position: 50%;
-    }
-}
-
-@media screen and (max-width: 1200px){
-    header{
-        padding: 40px;
-        }
-        .conteiner__cover{
-            background-position: -100px;
+    body{
+        background-color: rgb(117, 200, 117);
+        
     }
 
-    .conteiner__cover .svg img{
-        width: 500px;
-    }
-}
-
-
-@media screen and (max-width: 1020px){
-
-    .conteiner__cover{
-        background-image:url("") ;
-        background-color: black;
-    }
-}
-
-.conteiner__cover .svg img{
-    display: none;
-}
-
-@media screen and (max-width:720px){
-    .menu nav{
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 250px;
-        height: 100vh;
-        padding: 40px;
-        z-index: 1;
-        transition: all 300ms;
+    nav{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+            }
+                          
+            li{
+            list-style-type:none;
+            position:relative;
+            width:120px;
+            }
+                        
+            li a{
+                text-decoration:none;
+                display:inline-block;
+                padding:5px 10px;
+                width:120px;
+                height:30px;
+                }
+                        
+                li a:hover{
+                color:#000;
+                background-color:#fff;
     }
 
-    .menu ul{
-        flex-direction: column;
-        margin-top: 40px;
-    }
-
-    .menu ul li{
-        margin-top: 30px;
-        margin-left: 0;
-    }
-}
-
-#selected{
-    background: none;
-    padding: 0px;
-    border-radius: none;
-}
+  }
