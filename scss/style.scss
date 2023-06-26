@@ -68,6 +68,16 @@ float: inline-start;
     font-weight: bold;
 }
 
+.container{
+    color: rgb(68, 164, 59);
+    text-align: center;
+}
+
+.card-body{
+    background-color: rgb(118, 113, 113);
+    color: #000;
+}
+
 .card{
 	-webkit-animation: rotate-in-center 0.6s 1 ;
 	        animation: rotate-in-center 0.6s 1 ;
